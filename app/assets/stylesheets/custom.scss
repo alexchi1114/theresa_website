@@ -223,6 +223,13 @@ div.content {
   }
 }
 
+@media only screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+}
+
 @media only screen and (max-width: 480px) and (orientation: portrait) {
     ul.sidenav li a {
         text-align: center;
