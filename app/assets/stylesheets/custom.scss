@@ -1,2 +1,215 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* Universal */
+
+h1, h2, h3{
+	font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+}
+
+h3{
+  font-size:12px;
+  padding-bottom:5px;
+}
+
+
+/* Banner */
+
+#banner{
+	background-color: #152033;
+	margin-bottom:0;
+  width:100%;
+  height:30%;
+}
+
+#logo{
+	width:400px;
+	height:150px;
+	color:white;
+	padding-left:25px;
+  display:inline-block;
+  padding-top:30px;
+}
+
+#info{
+  float:right;
+  color:white;
+  width:200px;
+  height:auto;
+  display:inline-block;
+  padding-top:30px;
+}
+
+
+/* Sidenav */
+
+.sidenav{
+	background: #46DDC9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#46DDC9,#1E5D55); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#46DDC9,#1E5D55); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#46DDC9,#1E5D55); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#46DDC9,#1E5D55); /* Standard syntax */
+}
+
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #0BB6BF;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #152033;
+    font-family: 'Cabin', sans-serif;
+	letter-spacing: 1px;
+	font-weight:bold;
+    border-bottom: 1px solid #152033;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #077A7F;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #152033;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media (max-width: 640px){
+  #info{
+    display:none;
+  }
+}
+
+@media (max-width: 480px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+        border-right:0;
+        border-bottom:1px solid #152033;
+    }
+
+    #banner{
+   		text-align:center;
+      padding:10px 10px;
+    }
+
+    #logo{
+    margin: 0 auto;
+    width:100%;
+    padding:0;
+    display: block;
+    height:auto;
+    }
+
+    #info{
+    float:none;
+    display:block;
+    }
+}
+
+
+
+
+
+body:after{
+  font-size: 300%;
+  font-weight:bold;
+  position:fixed;
+  bottom:60px;
+  background-color:hsla(1,60%,40%,.7);
+  width:100%;
+  text-align:center;
+  color:white;
+  content: "less than 320 px";
+}
+
+@media only screen and (min-width:320px){
+  body:after {
+    content: "320 to 480px"
+  }
+}
+
+
+@media only screen and (min-width:480px){
+  body:after {
+    content: "480 to 768px"
+  }
+}
+
+@media only screen and (min-width:768px){
+  body:after {
+    content: "768 to 1024px"
+  }
+}
+
+@media only screen and (min-width:1024px){
+  body:after {
+    content: "1024 and up"
+  }
+}
