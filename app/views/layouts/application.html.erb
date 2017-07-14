@@ -4,6 +4,7 @@
     <title>TheresaWebsite</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,6 +12,11 @@
   </head>
 
   <body>
-    <%= yield %>
+  	
+	  	<%= render 'layouts/header' %>
+	  	<%= render 'layouts/sidebar' %>
+	    <%= yield %>
+    	<%= render 'layouts/footer' %>
+
   </body>
 </html>
