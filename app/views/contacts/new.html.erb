@@ -1,0 +1,36 @@
+<div class = 'content-section'>
+	<div class = 'text-center'>
+		<h1> Contact </h1>
+
+		<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ0z1Y3hFj0YkRj8qUKP-0YZY&key=AIzaSyDQpfXw0TpakURxlUVlHZrGQyYvtdb6ebs" allowfullscreen></iframe>
+
+	</div>
+	<br>
+	<br>
+	<div id = 'form-container'>
+		<h2 class = 'text-center'>Leave a Message</h2>
+	<%= form_for(@contact, :url => { :action => "create" , :anchor => "form-container" }) do |f| %>
+		<%= render 'shared/error_messages', object: f.object %>
+		<%= f.label :name %>
+	     <%= f.text_field :name, class: 'form-control' %>
+	     <br>
+	     <%= f.label :email %>
+	     <%= f.email_field :email, class: 'form-control' %>
+	     <br>
+	     <%= f.label :subject %>
+	     <%= f.text_field :subject, class: 'form-control' %>
+	     <br>
+	      <%= f.label :body %>
+	      <%= f.text_area :body, class: 'form-control' %>
+
+	      
+     		
+	      <br>
+	     <div class = 'text-center' id = 'feedback-button'>
+	   		<%= f.button :Submit, :class=> "btn btn-primary", :id=> "feedback-button" %>
+	   	</div>
+	   
+	  <% end %>
+	</div>
+
+</div>
