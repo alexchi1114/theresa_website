@@ -77,24 +77,22 @@ body {
   margin: 0;
   font-family: 'Cabin', sans-serif;
   min-height: 100%;
-  background: #46DDC9; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#46DDC9,#1E5D55); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#46DDC9,#1E5D55); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#46DDC9,#1E5D55); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#46DDC9,#1E5D55); /* Standard syntax */
+  background: #00c0ff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#00c0ff,#add8e6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00c0ff,#add8e6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00c0ff,#add8e6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00c0ff,#add8e6); /* Standard syntax */
 }
 
 
 /* Banner */
 
 #banner{
-	background: -moz-linear-gradient(45deg, rgba(21,32,51,1) 0%, rgba(0,99,99,1) 100%); /* ff3.6+ */
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(21,32,51,1)), color-stop(100%, rgba(0,99,99,1))); /* safari4+,chrome */
-background: -webkit-linear-gradient(45deg, rgba(21,32,51,1) 0%, rgba(0,99,99,1) 100%); /* safari5.1+,chrome10+ */
-background: -o-linear-gradient(45deg, rgba(21,32,51,1) 0%, rgba(0,99,99,1) 100%); /* opera 11.10+ */
-background: -ms-linear-gradient(45deg, rgba(21,32,51,1) 0%, rgba(0,99,99,1) 100%); /* ie10+ */
-background: linear-gradient(45deg, rgba(21,32,51,1) 0%, rgba(0,99,99,1) 100%); /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006363', endColorstr='#152033',GradientType=1 ); /* ie6-9 */
+	background: #0c0c3a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0c0c3a,#191970); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0c0c3a,#191970); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0c0c3a,#191970); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0c0c3a,#191970); /* Standard syntax */
 	margin-bottom:0;
   width:100%;
   height:30%;
@@ -175,7 +173,7 @@ th, td{
   color:white;
   line-height:45px;
   clear:both;
-  background-color:#152033;
+  background-color:#0c0c3a;
 }
 
 #facebook-logo{
@@ -272,19 +270,19 @@ ul.sidenav li a {
 	 font-weight:bold;
    border: 1px solid #152033;
    margin:5px;
-   background-color: #077A7F;
+   background-color: #00009b;
     padding: 16px 16px;
     border-radius:5px;
     text-decoration: none;
 }
  
 ul.sidenav li a.active {
-    background-color: #152033;
+    background-color: #0c0c3a;
     color: white;
 }
 
 ul.sidenav li a:hover:not(.active) {
-    background-color: #152033;
+    background-color: #0c0c3a;
     color: white;
 }
 
@@ -308,9 +306,30 @@ div.content {
 
 
 @media(max-width: 835px){
-  #info{
-    display:none;
-  }
+
+  #chiropractor{
+      float:none;
+    }
+
+    #banner{
+      text-align:center;
+      padding:10px 10px;
+    }
+
+    #logo{
+    margin: 0 auto;
+    width:100%;
+    height:20%;
+    padding:0;
+    display: block;
+    }
+
+    #info{
+    float:none;
+    display:block;
+    margin: 0 auto;
+    border:none;
+    }
 }
 
 @media only screen and (max-device-width: 480px) {
