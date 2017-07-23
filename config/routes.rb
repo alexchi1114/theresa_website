@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 	get '/staff', to: 'static_pages#staff'
 
+	get '/location', to: 'static_pages#location'
+
 	root 'static_pages#home'
 
 	resources :contacts, only: [:new, :create]
